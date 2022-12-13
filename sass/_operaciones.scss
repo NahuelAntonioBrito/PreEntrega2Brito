@@ -1,0 +1,8 @@
+.color2{
+    color: white;
+} 
+
+@mixin padd_color ($padd, $color){
+    padding: $padd;
+    background-color: $color;
+}

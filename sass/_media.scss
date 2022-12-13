@@ -1,0 +1,187 @@
+/* Grid área */
+.grilla{
+    grid-area: grilla;
+}
+
+main{
+    grid-area: main;
+}
+
+h1{
+    grid-area: h1;
+}
+
+h2{
+    grid-area: h2;
+}
+.anime{
+    grid-area: anime;
+}
+
+h3{
+    grid-area: h3;
+}
+
+.manga{
+    grid-area: manga;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.grilla{
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas:
+    "h1"
+    "h2"
+    "anime"
+    "h3"
+    "manga"
+    "footer";
+    gap: 10px;
+
+    @media(min-width: 524px){
+
+        .grilla{
+            display: grid;
+            grid-template-areas:
+            "h1     h1"
+            "h2     h2"
+            "anime  anime"
+            "h3     h3"
+            "manga  manga"
+            "footer footer";
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media(min-width: 768px){
+        .grilla{
+            padding: 0px;
+            margin: 0;
+            display: grid;
+            grid-template-areas:
+            "h1      h1"
+            "h2      h2"
+            "anime   anime "
+            "h3      h3"
+            "manga   manga"
+            "footer  footer";
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+    }
+
+    @media (min-width: 1024px){
+
+        .grilla{
+            padding: 0px;
+            margin: 0;
+            display: grid;
+            grid-template-areas:
+            "h1      h1     h1"
+            "h2      h2     h2"
+            "anime   anime  anime"
+            "h3      h3     h3"
+            "manga   manga  manga"
+            "footer  footer footer";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0px;
+        }
+    }
+}
+
+body{
+    text-align: center;
+    font-weight: bolder;
+    min-height: 100vh;
+}
+
+img{
+    margin: 20px;
+    border-radius: 50%;
+    border: 10px double black;
+
+    @media(min-width: 768px){
+        border-radius: 20px;
+    }
+}
+
+a{
+    padding-left: 10px;
+}
+
+.menu{
+    padding-top: 0px;
+    padding-left: 0;
+    margin: 0;
+    text-decoration: none;
+    word-spacing: 15px;
+    text-transform: uppercase;
+
+    @media(min-width: 768px){
+        padding-left: 10px;
+    }
+
+    @media (min-width: 1070px){
+        padding: 0;
+        color: white;
+        font-size: 40px;
+        word-spacing: 20px;
+    }
+}
+
+h1{
+    font-size: 25px;
+
+    @media (min-width: 1024px){
+        font-size: 40px;
+    }
+}
+
+h2, h3, .titulo{
+    font-size: $sizeMobile;
+
+    @media (min-width: 1024px){
+        font-size: $sizedesktop;
+    }
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+
+    @media(min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.box-video{
+    width: 400px;
+    height: 225px;
+    @media(min-width: 768px){
+        width: 640px;
+        height: 360px;
+    }
+}
+
+footer{
+    @include padd_color (3em, black);
+    margin-top: 1.5em;
+
+    @media(min-width: 768px){
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    @media (min-width: 1024px){
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+}

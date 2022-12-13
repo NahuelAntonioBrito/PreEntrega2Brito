@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Kanit:ital,wght@1,500 & display=swap");
+.color2, h1, a {
+  color: white;
+}
+
+/* Grid área */
+.grilla {
+  grid-area: grilla;
+}
+
+main {
+  grid-area: main;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+.anime {
+  grid-area: anime;
+}
+
+h3 {
+  grid-area: h3;
+}
+
+.manga {
+  grid-area: manga;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grilla {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-template-areas: "h1" "h2" "anime" "h3" "manga" "footer";
+  gap: 10px;
+}
+@media (min-width: 524px) {
+  .grilla .grilla {
+    display: grid;
+    grid-template-areas: "h1     h1" "h2     h2" "anime  anime" "h3     h3" "manga  manga" "footer footer";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .grilla .grilla {
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "h1      h1" "h2      h2" "anime   anime " "h3      h3" "manga   manga" "footer  footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .grilla .grilla {
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "h1      h1     h1" "h2      h2     h2" "anime   anime  anime" "h3      h3     h3" "manga   manga  manga" "footer  footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+  }
+}
+
+body {
+  text-align: center;
+  font-weight: bolder;
+  min-height: 100vh;
+}
+
+img {
+  margin: 20px;
+  border-radius: 50%;
+  border: 10px double black;
+}
+@media (min-width: 768px) {
+  img {
+    border-radius: 20px;
+  }
+}
+
+a {
+  padding-left: 10px;
+}
+
+.menu {
+  padding-top: 0px;
+  padding-left: 0;
+  margin: 0;
+  text-decoration: none;
+  word-spacing: 15px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .menu {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1070px) {
+  .menu {
+    padding: 0;
+    color: white;
+    font-size: 40px;
+    word-spacing: 20px;
+  }
+}
+
+h1 {
+  font-size: 25px;
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2, h3, .titulo {
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  h2, h3, .titulo {
+    font-size: 40px;
+  }
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.box-video {
+  width: 400px;
+  height: 225px;
+}
+@media (min-width: 768px) {
+  .box-video {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+footer {
+  padding: 3em;
+  background-color: black;
+  margin-top: 1.5em;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 10px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+}
+body header {
+  margin: 0;
+}
+body header li {
+  list-style-type: none;
+  display: inline;
+}
+
+.bkg {
+  background-color: black;
+}
+
+.logo {
+  border-radius: 0%;
+}
+
+/*Extend*/
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding: 20px;
+  background-color: black;
+  border: 10px solid;
+  margin: 30px 10px 30px 10px;
+}
+
+h2, h3 {
+  color: black;
+}
+
+p {
+  color: black;
+  padding: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+.ancla {
+  color: black;
+}
+
+.descripcion {
+  font-weight: 600;
+}
+
+.carousel-img {
+  border-radius: 0%;
+  border: solid;
+}
+
+.carousel-3 {
+  color: red;
+}
+
+.videos {
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.redes {
+  background-color: white;
+  margin: 10px;
+}
+
+.catalogo:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=style.css.map */

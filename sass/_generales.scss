@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $colorFondo;
+
+    header{
+        margin: 0;
+
+        li{
+            list-style-type: none;
+            display: inline;
+        }
+    }
+}
+
+.bkg{
+    background-color: black;
+}
+
+.logo{
+    border-radius: 0%;
+}
+
+/*Extend*/
+
+a{
+    @extend .color2;
+    text-decoration: none;
+}
+
+h1{
+    @extend .color2;
+    @include padd_color (20px, black);
+    border: 10px solid;
+    margin: 30px 10px 30px 10px;
+}
+
+h2, h3{
+    color: $colorTexto;
+}
+
+p{
+    color: $colorTexto;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.ancla{
+    color: black;
+}
+
+.descripcion{
+    font-weight: 600;
+}
+
+.carousel-img{
+    border-radius: 0%;
+    border: solid;
+}
+
+.carousel-3{
+    color: red;
+}
+
+.videos{
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.redes{
+    background-color: $colorFondoRedes;
+    margin:  10px;
+}
