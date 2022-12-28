@@ -161,6 +161,12 @@ h2, h3, .titulo{
     }
 }
 
+.form-registro {
+    width: 300px;
+    @media(min-width: 524px){
+        width: 500px;
+    }
+}
 .box-video{
     width: 400px;
     height: 225px;
